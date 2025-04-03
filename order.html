@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | VegBuy - Fast Grocery Delivery in Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Place your grocery order with VegBuy Kenya. Fresh fruits, vegetables and pantry essentials delivered to your doorstep in Nairobi, Mombasa & Kisumu.">
+    <meta name="keywords" content="grocery delivery Kenya, order fruits online Nairobi, vegetable delivery service, same day grocery delivery Kenya">
+    <meta name="author" content="VegBuy Kenya">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vegbuy.co.ke/order" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vegbuy.co.ke/order">
+    <meta property="og:title" content="Order Groceries Online | VegBuy Kenya">
+    <meta property="og:description" content="Place your order for fresh fruits, vegetables and pantry essentials with same-day delivery across Kenya.">
+    <meta property="og:image" content="https://vegbuy.co.ke/images/order-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vegbuy.co.ke/order">
+    <meta property="twitter:title" content="Order Groceries Online | VegBuy Kenya">
+    <meta property="twitter:description" content="Place your order for fresh fruits, vegetables and pantry essentials with same-day delivery across Kenya.">
+    <meta property="twitter:image" content="https://vegbuy.co.ke/images/order-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="https://vegbuy.co.ke/images/logo.png" alt="VegBuy Logo" class="logo-img">
+                <span class="logo-text">VegBuy</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav class="primary-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="order.html" class="nav-link active">Order Now</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." id="header-search">
+                    <button id="header-search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-cta">
+                    <a href="tel:+254700123456" class="cta-button phone-button">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="order.html" class="cta-button order-button">
+                        <i class="fas fa-shopping-cart"></i> Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-banner">
+        <div class="content-container">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span>Order</span>
+            </div>
+            <h1>Place Your Order <i class="fas fa-shopping-basket basket-icon"></i></h1>
+            <p class="contact-subtitle">Fill out the form below to send us your order details. We'll confirm availability and delivery via email/SMS within 1 hour.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="content-container">
+            <div class="contact-wrapper">
+                <form id="order-form" class="order-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                    <h2 class="form-title">Order Request Form</h2>
+                    <p class="form-description">Please provide your details and the items you'd like to order from our <a href="products.html">product list</a>.</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="e.g. 0712345678">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="delivery">Delivery Address*</label>
+                        <textarea id="delivery" name="delivery_address" rows="3" required placeholder="Your complete address including landmarks"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="order">Your Order Details*</label>
+                        <div class="order-input-container">
+                            <textarea id="order" name="order_details" rows="5" required 
+                                    placeholder="Example: 
+- 2kg Apples
+- 1 bunch Sukuma Wiki 
+- 3kg Potatoes
+- 1 tray Eggs
+Please include quantities for each item"></textarea>
+                            <div class="order-help">
+                                <button type="button" class="help-btn" id="order-help-btn"><i class="fas fa-question-circle"></i></button>
+                                <div class="help-tooltip" id="order-help-tooltip">
+                                    <h4>Order Format Tips</h4>
+                                    <ul>
+                                        <li>List each item on a new line</li>
+                                        <li>Include quantities (e.g., 2kg, 3 pieces)</li>
+                                        <li>Specify any special requests</li>
+                                        <li>Check our <a href="products.html">products page</a> for current availability</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Delivery Date*</label>
+                            <input type="date" id="preferred-date" name="delivery_date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-time">Preferred Time*</label>
+                            <select id="preferred-time" name="delivery_time" required>
+                                <option value="">Select time</option>
+                                <option value="morning">Morning (8AM-12PM)</option>
+                                <option value="afternoon">Afternoon (12PM-4PM)</option>
+                                <option value="evening">Evening (4PM-8PM)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="special-instructions">Special Instructions</label>
+                        <textarea id="special-instructions" name="special_instructions" rows="2" placeholder="Any additional notes about your order (e.g., substitutions, delivery instructions)"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment-method">Preferred Payment Method*</label>
+                        <select id="payment-method" name="payment_method" required>
+                            <option value="">Select payment method</option>
+                            <option value="mpesa">M-Pesa</option>
+                            <option value="cash">Cash on Delivery</option>
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="bank">Bank Transfer</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms-agree" name="terms_agree" required>
+                        <label for="terms-agree">I agree to VegBuy's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>*</label>
+                    </div>
+                    
+                    <!-- Formspree hidden fields -->
+                    <input type="hidden" name="_subject" value="New Order Request from VegBuy Website">
+                    <input type="text" name="_gotcha" style="display:none">
+                    
+                    <button type="submit" class="submit-order-btn">
+                        <i class="fas fa-paper-plane"></i> Send Order Request
+                    </button>
+                    
+                    <div class="form-status" id="form-status"></div>
+                </form>
+                
+                <div class="contact-methods">
+                    <h2 class="contact-methods-title">Other Ways to Order</h2>
+                    
+                    <div class="contact-card whatsapp-card">
+                        <i class="fab fa-whatsapp contact-icon"></i>
+                        <h3>WhatsApp</h3>
+                        <p>Send your order directly via WhatsApp for quick response and order confirmation.</p>
+                        <a href="https://wa.me/254700123456?text=Hello%20VegBuy%2C%20I%20would%20like%20to%20place%20an%20order" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <h3>Call Us</h3>
+                        <p>Speak directly with our customer service team to place your order.</p>
+                        <a href="tel:+254700123456" class="phone-btn">
+                            <i class="fas fa-phone"></i> +254 700 123 456
+                        </a>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <h3>Delivery Information</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Same-day delivery available for orders before 2PM</li>
+                            <li><i class="fas fa-check-circle"></i> Free delivery for orders over Ksh 2,000</li>
+                            <li><i class="fas fa-check-circle"></i> Standard delivery fee: Ksh 150 within city limits</li>
+                            <li><i class="fas fa-check-circle"></i> Delivery hours: 8AM - 8PM daily</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <h3>Payment Options</h3>
+                        <ul>
+                            <li><i class="fab fa-cc-mpesa"></i> M-Pesa (Paybill: 123456, Account: Your Name)</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Cash on Delivery (Nairobi only)</li>
+                            <li><i class="fab fa-cc-visa"></i> Credit/Debit Card (Visa, Mastercard)</li>
+                            <li><i class="fas fa-university"></i> Bank Transfer (Details upon request)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-process">
+        <div class="content-container">
+            <h2 class="section-title">How Your Order is Processed</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Order Received</h3>
+                    <p>We receive your order details and begin processing immediately.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Confirmation</h3>
+                    <p>We'll confirm product availability and delivery time via SMS/email.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Fresh Picking</h3>
+                    <p>Our team hand-picks the freshest items from our partner farms.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Delivery</h3>
+                    <p>Your order is delivered to your doorstep at the scheduled time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="content-container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">How quickly can I get my order delivered? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We offer same-day delivery for orders placed before 2PM within Nairobi, Mombasa and Kisumu. For orders placed after 2PM, delivery will be scheduled for the next day. Outside these cities, delivery typically takes 1-2 days depending on your location.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What if an item I ordered is out of stock? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We will contact you immediately if any items in your order are unavailable. You can choose to substitute with a similar product, remove the item, or cancel the entire order. We strive to maintain accurate stock levels on our website.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I modify or cancel my order after placing it? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, you can modify or cancel your order as long as it hasn't been processed for delivery. Please call us immediately at +254 700 123 456 or reply to your order confirmation message.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are your delivery charges? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Delivery is free for orders over Ksh 2,000 within city limits. Standard delivery fee is Ksh 150 for orders below this amount. For areas outside city centers, delivery fees vary based on distance - we'll confirm this when processing your order.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I pay for my order? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We accept M-Pesa (Paybill: 123456), cash on delivery (Nairobi only), credit/debit cards, and bank transfers. Payment details will be confirmed when we process your order.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="content-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>VegBuy</h3>
+                    <p>Your trusted online grocery store bringing farm-fresh produce directly to your doorstep since 2020.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="#testimonials">Customer Reviews</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Delivery Areas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Farmers Partnership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> orders@vegbuy.co.ke</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 7:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 VegBuy. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-mpesa"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

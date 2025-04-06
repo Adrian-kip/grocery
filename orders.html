@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place your order with VegBuy for fresh organic groceries delivered to your doorstep in Kenya. Secure checkout and multiple payment options available.">
+    <meta name="keywords" content="grocery delivery Kenya, online grocery order, organic food delivery Nairobi, fresh produce delivery, Kenya grocery shopping">
+    <title>Order Now - VegBuy | Fresh Organic Groceries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="veg">Veg</span><span class="buy">Buy</span>
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="orders.html" class="active">Orders</a></li>
+                    <li><a href="tel:+254799250399"><i class="fas fa-phone-alt"></i> Call Us</a></li>
+                    <li><a href="https://wa.me/254799250399" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="orders.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Order Hero Section -->
+    <section class="order-hero">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <p>Complete your purchase and we'll deliver fresh groceries to your doorstep</p>
+        </div>
+    </section>
+
+    <!-- Order Process Section -->
+    <section class="order-process">
+        <div class="container">
+            <div class="process-steps">
+                <div class="process-step active">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Review Your Cart</h3>
+                        <p>Check your selected items</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Delivery Information</h3>
+                        <p>Enter your details</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Payment</h3>
+                        <p>Choose payment method</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Confirmation</h3>
+                        <p>Complete your order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Summary Section -->
+    <section class="cart-summary">
+        <div class="container">
+            <h2>Your Order Summary</h2>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="header-item">Product</div>
+                        <div class="header-item">Price</div>
+                        <div class="header-item">Quantity</div>
+                        <div class="header-item">Total</div>
+                        <div class="header-item">Remove</div>
+                    </div>
+                    <!-- Cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-summary-details">
+                    <!-- Order summary will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Form Section -->
+    <section class="delivery-form-section">
+        <div class="container">
+            <h2>Delivery Information</h2>
+            <form id="delivery-form" action="https://formspree.io/f/mrbpoepl" method="POST">
+                <input type="hidden" name="_subject" value="New VegBuy Order #VB<ORDER_ID>">
+                <input type="hidden" name="_replyto" id="reply-to-email">
+                <input type="hidden" name="_next" value="#">
+                <input type="hidden" name="order_id" id="order-id">
+                <input type="hidden" name="order_details" id="order-details">
+            
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="full-name">Full Name*</label>
+                    <input type="text" id="full-name" name="full-name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address*</label>
+                    <input type="text" id="address" name="address" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City/Town*</label>
+                    <input type="text" id="city" name="city" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-date">Preferred Delivery Date*</label>
+                    <input type="date" id="delivery-date" name="delivery-date" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-time">Preferred Delivery Time*</label>
+                    <select id="delivery-time" name="delivery-time" class="form-select" required>
+                        <option value="">Select Time Slot</option>
+                        <option value="9am-12pm">9:00 AM - 12:00 PM</option>
+                        <option value="12pm-3pm">12:00 PM - 3:00 PM</option>
+                        <option value="3pm-6pm">3:00 PM - 6:00 PM</option>
+                        <option value="6pm-9pm">6:00 PM - 9:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="special-instructions">Special Instructions</label>
+                    <textarea id="special-instructions" name="special-instructions" rows="3" class="form-input"></textarea>
+                </div>
+            </div>
+            <div class="payment-method">
+                <h3>Payment Method*</h3>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="mpesa" name="payment-method" value="M-Pesa" checked>
+                        <label for="mpesa">
+                            <i class="fab fa-cc-mpesa"></i> M-Pesa
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="cash-on-delivery" name="payment-method" value="Cash on Delivery">
+                        <label for="cash-on-delivery">
+                            <i class="fas fa-money-bill-wave"></i> Cash on Delivery
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="credit-card" name="payment-method" value="Credit/Debit Card">
+                        <label for="credit-card">
+                            <i class="far fa-credit-card"></i> Credit/Debit Card
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="btn btn-primary btn-lg">Complete Order</button>
+                <div id="form-status" class="form-status"></div>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Order Confirmation Modal -->
+    <div class="order-confirmation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Order Confirmation</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Thank You For Your Order!</h4>
+                <p>Your order #VB20230045 has been received and is being processed. We'll send you a confirmation email shortly.</p>
+                <div class="order-details">
+                    <div class="detail-row">
+                        <span>Order Number:</span>
+                        <span>VB20230045</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Delivery Date:</span>
+                        <span>Thursday, June 15, 2023</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Delivery Time:</span>
+                        <span>3:00 PM - 6:00 PM</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Total Amount:</span>
+                        <span>KSh 699</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Payment Method:</span>
+                        <span>M-Pesa</span>
+                    </div>
+                </div>
+                <div class="modal-btns">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                    <a href="products.html" class="btn btn-secondary">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>VegBuy</h3>
+                    <p>Kenya's premier online organic grocery store, connecting you directly with the freshest produce from local farms.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/254799250399"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="orders.html">Orders</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone-alt"></i> +254 799 250 399</li>
+                        <li><i class="fas fa-envelope"></i> info@vegbuyshop.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Payment Methods</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-mpesa"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Delivery Areas</h3>
+                    <p>Nairobi, Mombasa, Kisumu, Nakuru and major towns across Kenya.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VegBuy. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h4>VegBuy Assistant</h4>
+            <button class="close-chatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chatbot-message chatbot-response">
+                <p>Hello! I'm your VegBuy assistant. How can I help you with your order?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button id="send-message" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

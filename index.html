@@ -3,469 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VegBuy - Fresh Groceries Delivered | Kenya's #1 Online Grocery Store</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="VegBuy - Kenya's premier online grocery store. Fresh fruits, vegetables, and pantry essentials delivered to your doorstep. Order now for same-day delivery in Nairobi, Mombasa & Kisumu!">
-    <meta name="keywords" content="online grocery Kenya, fresh produce delivery, fruits vegetables Nairobi, grocery delivery service, best prices Kenya, farm fresh groceries, same day delivery Nairobi">
-    <meta name="author" content="VegBuy Kenya">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://vegbuy.co.ke/" />
-
-    <!-- Open Graph / Facebook -->
+    <meta name="description" content="VegBuy - Kenya's freshest online grocery delivery service. Organic vegetables, fruits, and pantry staples delivered to your doorstep.">
+    <meta name="keywords" content="online grocery Kenya, fresh vegetables Nairobi, organic food delivery, Kenya grocery delivery, healthy food Kenya">
+    <meta name="author" content="VegBuy">
+    <meta property="og:title" content="VegBuy - Fresh Groceries Delivered to Your Doorstep">
+    <meta property="og:description" content="Kenya's freshest online grocery delivery service. Order organic vegetables, fruits, and pantry staples.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vegbuy.co.ke/">
-    <meta property="og:title" content="VegBuy - Fresh Groceries Delivered to Your Doorstep | Kenya">
-    <meta property="og:description" content="Kenya's premier online grocery store. Fresh fruits, vegetables, and pantry essentials delivered to your doorstep. Order now for same-day delivery!">
-    <meta property="og:image" content="https://vegbuy.co.ke/images/social-preview.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://vegbuy.co.ke/">
-    <meta property="twitter:title" content="VegBuy - Fresh Groceries Delivered to Your Doorstep | Kenya">
-    <meta property="twitter:description" content="Kenya's premier online grocery store. Fresh fruits, vegetables, and pantry essentials delivered to your doorstep. Order now for same-day delivery!">
-    <meta property="twitter:image" content="https://vegbuy.co.ke/images/social-preview.jpg">
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "GroceryStore",
-      "name": "VegBuy",
-      "description": "Kenya's premier online grocery store delivering fresh fruits, vegetables, and pantry essentials to your doorstep.",
-      "url": "https://vegbuy.co.ke",
-      "logo": "https://vegbuy.co.ke/images/logo.png",
-      "telephone": "+254700123456",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Grocery Lane",
-        "addressLocality": "Nairobi",
-        "addressRegion": "Nairobi",
-        "postalCode": "00100",
-        "addressCountry": "Kenya"
-      },
-      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 07:00-20:00",
-      "priceRange": "$$",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Grocery Products",
-        "itemListElement": [
-          {
-            "@type": "OfferCatalog",
-            "name": "Fruits",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Product",
-                  "name": "Apples"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    }
-    </script>
+    <meta property="og:url" content="https://www.vegbuyshop.com">
+    <title>VegBuy - Fresh Groceries Delivered to Your Doorstep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="https://via.placeholder.com/50x50" alt="VegBuy Logo" class="logo-img">
-                <span class="logo-text">VegBuy</span>
-            </a>
-            
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-            
-            <nav class="primary-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="order.html" class="nav-link">Order Now</a></li>
-                    <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="veg">Veg</span><span class="buy">Buy</span>
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="tel:+254799250399"><i class="fas fa-phone-alt"></i> Call Us</a></li>
+                    <li><a href="https://wa.me/254799250399" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="orders.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
                 </ul>
             </nav>
-            
-            <div class="header-actions">
-                <div class="search-container">
-                    <input type="text" placeholder="Search products..." id="header-search">
-                    <button id="header-search-btn"><i class="fas fa-search"></i></button>
-                </div>
-                <div class="header-cta">
-                    <a href="tel:+254700123456" class="cta-button phone-button">
-                        <i class="fas fa-phone"></i> Call Now
-                    </a>
-                    <a href="order.html" class="cta-button order-button">
-                        <i class="fas fa-shopping-cart"></i> Order
-                    </a>
-                </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <section class="main-banner">
-        <div class="banner-content">
-            <h1>Fresh Groceries Delivered to Your Doorstep in Kenya! <span class="banner-emoji">🥬🍎🥕</span></h1>
-            <p class="banner-text">Welcome to <strong>VegBuy</strong>, Kenya's trusted source for farm-fresh fruits, vegetables, and pantry essentials. Enjoy quality produce at unbeatable prices with convenient home delivery across Nairobi, Mombasa, and Kisumu!</p>
-            <div class="banner-buttons">
-                <a href="products.html" class="primary-btn">Shop Now <i class="fas fa-arrow-right"></i></a>
-                <a href="order.html" class="secondary-btn">Order in 2 Minutes <i class="fas fa-bolt"></i></a>
-            </div>
-            <div class="trust-badges">
-                <div class="badge"><i class="fas fa-check-circle"></i> 100% Fresh Guarantee</div>
-                <div class="badge"><i class="fas fa-truck"></i> Same-Day Delivery</div>
-                <div class="badge"><i class="fas fa-shield-alt"></i> Secure Payments</div>
-            </div>
-        </div>
-        <div class="banner-image">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Groceries">
-        </div>
-    </section>
-    
-    <section class="store-description" id="about">
-        <div class="content-container">
-            <div class="description-content">
-                <h2>Why Choose VegBuy?</h2>
-                <p class="description-text">We partner directly with Kenyan farmers to bring you the freshest produce at fair prices. Our team carefully selects every item, and our delivery network covers major cities with same-day service available. Supporting local agriculture while providing you convenience!</p>
-                <div class="stats-container">
-                    <div class="stat-item">
-                        <span class="stat-number">10,000+</span>
-                        <span class="stat-label">Happy Customers</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">200+</span>
-                        <span class="stat-label">Local Farmers</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">98%</span>
-                        <span class="stat-label">Satisfaction Rate</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">2hrs</span>
-                        <span class="stat-label">Avg. Delivery Time</span>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Fresh Organic Groceries Delivered to Your Doorstep</h1>
+                <p>Experience farm-fresh quality with our carefully selected produce, delivered straight from our farms to your kitchen</p>
+                <div class="hero-btns">
+                    <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    <a href="#why-choose-us" class="btn btn-secondary">Why Choose Us</a>
                 </div>
-            </div>
-            <div class="description-image">
-                <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Vegetables">
-            </div>
-        </div>
-    </section>
-    
-    <section class="product-highlights">
-        <div class="content-container">
-            <h2 class="section-title">How VegBuy Works</h2>
-            <p class="section-subtitle">Get fresh groceries in 3 simple steps</p>
-            <div class="benefits-container">
-                <div class="benefit-box">
-                    <div class="benefit-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>1. Browse & Select</h3>
-                    <p>Explore our wide range of fresh fruits, vegetables, and pantry staples with real-time availability and prices.</p>
-                </div>
-                <div class="benefit-box">
-                    <div class="benefit-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>2. Place Your Order</h3>
-                    <p>Use our simple order form or WhatsApp to tell us what you need and when you'd like it delivered.</p>
-                </div>
-                <div class="benefit-box">
-                    <div class="benefit-icon"><i class="fas fa-truck"></i></div>
-                    <h3>3. Receive Delivery</h3>
-                    <p>Get your fresh groceries delivered to your doorstep at your preferred time by our friendly team.</p>
-                </div>
-            </div>
-            <div class="cta-center">
-                <a href="products.html" class="primary-btn large">Start Shopping Now <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-    <section class="featured-products">
-        <div class="content-container">
-            <h2 class="section-title">Popular This Week</h2>
-            <p class="section-subtitle">Customers are loving these fresh picks</p>
-            <div class="product-grid">
-                <article class="product-card">
-                    <div class="product-badge">Best Seller</div>
-                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')"></div>
-                    <h3>Apples (Red Delicious)</h3>
-                    <p class="product-price">Ksh 50 <span class="price-unit">/pc</span></p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                
-                <article class="product-card">
-                    <div class="product-badge">Local Favorite</div>
-                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')"></div>
-                    <h3>Sukuma Wiki (Bunch)</h3>
-                    <p class="product-price">Ksh 30 <span class="price-unit">/bunch</span></p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                
-                <article class="product-card">
-                    <div class="product-badge">Organic</div>
-                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1580201092675-a0a6a6cafbb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')"></div>
-                    <h3>Onions (Red)</h3>
-                    <p class="product-price">Ksh 20 <span class="price-unit">/pc</span></p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                
-                <article class="product-card">
-                    <div class="product-badge">New Arrival</div>
-                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1587486913049-53fc88980cfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')"></div>
-                    <h3>Eggs (Tray)</h3>
-                    <p class="product-price">Ksh 350 <span class="price-unit">/tray</span></p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <i class="fas fa-truck"></i>
+                <h3>Fast Delivery</h3>
+                <p>Get your order delivered within 24 hours in Nairobi and 48 hours nationwide</p>
             </div>
-            <div class="cta-center">
-                <a href="products.html" class="secondary-btn large">View All Products <i class="fas fa-arrow-right"></i></a>
+            <div class="feature-box">
+                <i class="fas fa-leaf"></i>
+                <h3>100% Organic</h3>
+                <p>Certified organic produce with no harmful pesticides or chemicals</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Best Prices</h3>
+                <p>Farm-direct prices that are 20-30% cheaper than supermarkets</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Quality Guarantee</h3>
+                <p>Not satisfied? We'll replace or refund your order, no questions asked</p>
             </div>
         </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
-        <div class="content-container">
-            <h2 class="section-title">What Our Customers Say</h2>
-            <p class="section-subtitle">Trusted by thousands of happy Kenyan families</p>
-            <div class="testimonial-carousel">
-                <button class="carousel-btn carousel-prev" aria-label="Previous testimonial">
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose VegBuy?</h2>
+            <div class="reasons">
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Farm to Table Freshness</h3>
+                        <p>Our produce is harvested at peak ripeness and delivered directly to you, ensuring maximum freshness and nutrition. Unlike supermarkets where produce can sit for days, we deliver within hours of harvest.</p>
+                    </div>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Healthier Choices</h3>
+                        <p>We carefully vet all our farmers to ensure they follow sustainable, organic practices. Our produce is free from harmful pesticides and GMOs, giving you peace of mind with every bite.</p>
+                    </div>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Save Time</h3>
+                        <p>No more traffic jams or long supermarket lines. Shop from the comfort of your home or office and have everything delivered at your convenience.</p>
+                    </div>
+                </div>
+                <div class="reason">
+                    <div class="reason-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Support Local Farmers</h3>
+                        <p>By shopping with us, you're directly supporting Kenyan farmers and sustainable agricultural practices that protect our environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How VegBuy Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse Our Selection</h3>
+                    <p>Explore our wide variety of fresh produce, pantry staples, and organic products.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Add to Cart</h3>
+                    <p>Select your favorite items and add them to your shopping cart.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Checkout Securely</h3>
+                    <p>Enter your delivery details and choose your preferred payment method.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Receive Your Order</h3>
+                    <p>Sit back and relax as we prepare and deliver your fresh groceries.</p>
+                </div>
+            </div>
+            <div class="cta">
+                <a href="products.html" class="btn btn-primary">Start Shopping Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+   <!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        
+        <div class="testimonial-slider-wrapper">
+            <div class="testimonial-slider">
+                <!-- Testimonial items will be duplicated by JavaScript -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I've been using VegBuy for 6 months now and I'll never go back to supermarket vegetables. The quality is consistently excellent and delivery is always on time."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah K.">
+                            <div>
+                                <h4>Sarah K.</h4>
+                                <span>Karen, Nairobi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The convenience of having fresh organic vegetables delivered to my office has been a game-changer for my family's health. VegBuy makes eating well so easy!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James M.">
+                            <div>
+                                <h4>James M.</h4>
+                                <span>Westlands, Nairobi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As a busy working mom, VegBuy saves me at least 5 hours a week. The prices are better than supermarkets and the quality is outstanding. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina W.">
+                            <div>
+                                <h4>Amina W.</h4>
+                                <span>Mombasa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <div class="testimonial-nav">
+                <button class="testimonial-prev">
                     <i class="fas fa-chevron-left"></i>
                 </button>
-                <div class="testimonial-track">
-                    <div class="testimonial-card active">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="testimonial-text">
-                            "The quality of vegetables is consistently excellent, and delivery is always on time. Saved me so many market trips! VegBuy has become my weekly grocery solution."
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah K." class="author-img">
-                            <div class="author-info">
-                                <span class="author-name">Sarah K.</span>
-                                <span class="author-location">Nairobi</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="testimonial-text">
-                            "I love that I can get farm-fresh produce at market prices without leaving my home. The avocados are always perfectly ripe. Highly recommended service!"
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James M." class="author-img">
-                            <div class="author-info">
-                                <span class="author-name">James M.</span>
-                                <span class="author-location">Mombasa</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="testimonial-text">
-                            "The customer service is outstanding. They helped me adjust my order when I realized I forgot something. Delivery was faster than expected!"
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Amina W." class="author-img">
-                            <div class="author-info">
-                                <span class="author-name">Amina W.</span>
-                                <span class="author-location">Kisumu</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="testimonial-text">
-                            "Best prices for organic produce in town. I've been a loyal customer for over a year now! The weekly specials help me save on my grocery budget."
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="David O." class="author-img">
-                            <div class="author-info">
-                                <span class="author-name">David O.</span>
-                                <span class="author-location">Nakuru</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-btn carousel-next" aria-label="Next testimonial">
+                <button class="testimonial-next">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
-            <div class="carousel-dots">
-                <button class="carousel-dot active" aria-label="Go to testimonial 1"></button>
-                <button class="carousel-dot" aria-label="Go to testimonial 2"></button>
-                <button class="carousel-dot" aria-label="Go to testimonial 3"></button>
-                <button class="carousel-dot" aria-label="Go to testimonial 4"></button>
-            </div>
         </div>
-    </section>
-
-    <section class="newsletter">
-        <div class="content-container">
-            <div class="newsletter-content">
-                <h2>Get Weekly Specials!</h2>
-                <p>Subscribe to our newsletter and receive exclusive offers, seasonal discounts, and fresh recipe ideas straight to your inbox.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="primary-btn">Subscribe <i class="fas fa-paper-plane"></i></button>
-                </form>
-                <p class="small-text">We respect your privacy. Unsubscribe at any time.</p>
-            </div>
-            <div class="newsletter-image">
-                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Vegetables">
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot Container -->
-    <div class="chatbot-container">
-        <button class="chatbot-toggle">
-            <i class="fas fa-comment-dots"></i>
-            <span class="chatbot-pulse"></span>
-        </button>
-        <div class="chatbot-window">
-            <div class="chatbot-header">
-                <div class="chatbot-avatar">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <div class="chatbot-info">
-                    <h3>VegBuy Assistant</h3>
-                    <p>Online now</p>
-                </div>
-                <button class="chatbot-close">&times;</button>
-            </div>
-            <div class="chatbot-messages">
-                <div class="chat-message bot-message">
-                    <div class="message-content">
-                        <p>Hello! I'm your VegBuy assistant. How can I help you today? 😊</p>
-                        <p class="message-time">Just now</p>
-                    </div>
-                </div>
-                <div class="chat-message bot-message">
-                    <div class="message-content">
-                        <p>You can ask me about:<br>
-                        - Product availability<br>
-                        - Delivery options<br>
-                        - Payment methods<br>
-                        - Store hours</p>
-                        <p class="message-time">Just now</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" placeholder="Type your message..." id="chatbot-input">
-                <button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
-            </div>
-            <div class="chatbot-quick-replies">
-                <button class="quick-reply">Delivery options</button>
-                <button class="quick-reply">Current offers</button>
-                <button class="quick-reply">Payment methods</button>
-            </div>
+        
+        <!-- Dots Navigation -->
+        <div class="testimonial-dots">
+            <div class="testimonial-dot active"></div>
+            <div class="testimonial-dot"></div>
+            <div class="testimonial-dot"></div>
         </div>
     </div>
+</section>
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get 10% Off Your First Order</h2>
+                <p>Subscribe to our newsletter and receive exclusive offers, recipes, and health tips straight to your inbox.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <footer class="main-footer">
-        <div class="content-container">
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
+                <div class="footer-col">
                     <h3>VegBuy</h3>
-                    <p>Your trusted online grocery store bringing farm-fresh produce directly to your doorstep since 2020.</p>
+                    <p>Kenya's premier online organic grocery store, connecting you directly with the freshest produce from local farms.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/254799250399"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+                <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="order.html">Order Now</a></li>
-                        <li><a href="#testimonials">Customer Reviews</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#">Delivery Areas</a></li>
+                        <li><a href="orders.html">Orders</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h3>Information</h3>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Returns Policy</a></li>
-                        <li><a href="#">Farmers Partnership</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
+                <div class="footer-col">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
-                        <li><i class="fas fa-envelope"></i> orders@vegbuy.co.ke</li>
                         <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
-                        <li><i class="fas fa-clock"></i> Mon-Sun: 7:00 AM - 8:00 PM</li>
+                        <li><i class="fas fa-phone-alt"></i> +254 799 250 399</li>
+                        <li><i class="fas fa-envelope"></i> info@vegbuyshop.com</li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Payment Methods</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-mpesa"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Delivery Areas</h3>
+                    <p>Nairobi, Mombasa, Kisumu, Nakuru and major towns across Kenya.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 VegBuy. All rights reserved.</p>
-                <div class="payment-methods">
-                    <i class="fab fa-cc-mpesa"></i>
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fas fa-money-bill-wave"></i>
+                <p>&copy; 2025 VegBuy. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h4>VegBuy Assistant</h4>
+            <button class="close-chatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chatbot-message chatbot-response">
+                <p>Hello! I'm your VegBuy assistant. How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button id="send-message" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
 </html>
